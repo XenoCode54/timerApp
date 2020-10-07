@@ -1,0 +1,62 @@
+@import url("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+
+body{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #ffffff;
+  color: #444444;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+select{
+  appearance: none;
+  outline: none;
+  border: 0 !important;
+  background: #f0f0f0;
+  flex: 1;
+  cursor: pointer;
+}
+
+.select{
+  position: relative;
+  display: flex;
+  min-width: 300px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+}
+.select::after{
+  font-family: "Ionicons";
+  content: "\f35d";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  padding: 0 1em;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #b4b4b4;
+}
+.select:hover::after{
+  color: #000000;
+}
+
+.clocks{
+  display: flex;
+  flex-direction: column;
+  min-width: 500px;
+  line-height: 40px;
+  background: #f0f0f0;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-left: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.16);
+
+}
